@@ -6,11 +6,15 @@ lib-cov
 *.out
 *.pid
 *.gz
+.project
+*.project
+*.sublime-project
+*.sublime-workspace
+*.workspace
 
 pids
 logs
 results
 
 npm-debug.log
-.project
 node_modules
