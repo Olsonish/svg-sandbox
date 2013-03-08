@@ -23,16 +23,16 @@ This is a personal project for purposes of learning things.
 
 This assumes you already have node installed.
 ```
-git clone git://github.com/Olsonish/eve-mc.git eve-mc
-cd eve-mc
+git clone git://github.com/Olsonish/svg-sandbox.git svg-sandbox
+cd svg-sandbox
 npm install
 node app.js
 ```
 I recommend nodemon (https://github.com/remy/nodemon)
 ```
-git clone git://github.com/Olsonish/eve-mc.git eve-mc
-cd eve-mc
+git clone git://github.com/Olsonish/svg-sandbox.git svg-sandbox
+cd svg-sandbox
+npm install nodemon -g
 npm install
-npm install nodemon -g 
-nodemin app
+nodemon app
 ```
