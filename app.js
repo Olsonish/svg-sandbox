@@ -25,15 +25,16 @@ app.configure(function() {
         compress: true,
         debug: true,
         force: true
-    }));
+	}));
 	app.use(express.logger('dev'));
 });
-
 
 /** Dev */
 app.configure('development', function() {
 	app.use(express.errorHandler());
 });
+
+
 
 /** Router */
 require('./app/server/router')(app);

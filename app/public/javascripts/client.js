@@ -1,9 +1,4 @@
-$(document).ready(function() {
-	
-	
-	
-	
-	
+$(document).ready(function () {
 	
 	// Google Web Font Support
 	WebFontConfig = {

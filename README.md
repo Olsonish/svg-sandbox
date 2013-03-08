@@ -37,3 +37,6 @@ npm install nodemon -g
 npm install
 nodemon app
 ```
+If you happen to be using Visual Studio 2012 I recommend investigating the following:
+* https://bitbucket.org/kurouninn/node.js-visualstudio-intellisense
+* http://stackoverflow.com/questions/11488208/intellisense-doesnt-work-for-js-in-vs2012
