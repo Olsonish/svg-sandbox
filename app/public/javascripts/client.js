@@ -7,7 +7,7 @@ $(document).ready(function() {
 	
 	// Google Web Font Support
 	WebFontConfig = {
-		google: { families: ['Ubuntu+Mono:400,700,400italic,700italic:latin', 'Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic:latin', 'Ubuntu+Condensed::latin']}
+		google: { families: ['Ubuntu:300,500,300italic,500italic', 'Ubuntu+Condensed::latin']}
 	};
 	(function() {
 	    var wf = document.createElement('script');

@@ -19,6 +19,7 @@
     "jade": "*",
     "less": "*",
     "less-middleware": "*",
-    "ember": "*"
+    "ember": "*",
+    "d3": "*"
   }
 }
