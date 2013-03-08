@@ -1,0 +1,23 @@
+!!! 5
+
+html(class="no-js", lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+
+    title
+      | SVG Sandbox | #{ title }
+    block styles
+      link(rel='stylesheet', href='stylesheets/style.css')
+    
+    script(src='/vendor/custom.modernizr.js')
+    
+  body
+    div#master
+      div#content
+        block content
+  
+  script(src='/vendor/jquery.js')
+  script(src='/vendor/jquery.form.js')
+  script(src='/javascripts/client.js')
+  block scripts
