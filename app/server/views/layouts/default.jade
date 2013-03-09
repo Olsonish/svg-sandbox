@@ -14,8 +14,18 @@ html(class="no-js", lang="en")
     
   body
     div#master
-      div#content
-        block content
+        
+        header
+            nav
+                ul
+                    li  
+                        a(href='/') home
+                    li  
+                        a(href='/data') utility data
+
+        div#content
+            block content
+
   
   script(src='/vendor/jquery.js')
   script(src='/vendor/d3.v3.js')

@@ -1,5 +1,6 @@
 @import 'reset.less';
 @import 'grid.less';
+@import 'elements.less';
 
 @column-width: 60;
 @gutter-width: 20;
@@ -13,4 +14,12 @@
 
 body { background:rgb(20,20,20);color:rgb(242,242,242);.ff-ubuntu(); }
 
+h1 { font-size:2em;line-height:2em; }
+
 #content { .column(12); }
+
+svg { .column(12);height:300px;background:rgba(255,255,255,.75);.rounded(3px); }
+
+circle { fill:rgba(255,255,255,.75);stroke:rgba(0,0,0,.75); 
+    &.active { fill:rgba(0,0,255,.5);stroke:rgba(0,0,0,.25); }
+}

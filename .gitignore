@@ -8,6 +8,10 @@ lib-cov
 *.gz
 .project
 *.project
+.config
+*.config
+*.sln
+*.suo
 *.sublime-project
 *.sublime-workspace
 *.workspace

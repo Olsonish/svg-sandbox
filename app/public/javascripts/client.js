@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	
+    
 	// Google Web Font Support
 	WebFontConfig = {
 		google: { families: ['Ubuntu:300,500,300italic,500italic', 'Ubuntu+Condensed::latin']}
@@ -12,5 +12,4 @@ $(document).ready(function () {
 	    var s = document.getElementsByTagName('script')[0];
 	    s.parentNode.insertBefore(wf, s);
   	})();
-	
 });

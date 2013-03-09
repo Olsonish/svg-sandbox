@@ -3,38 +3,38 @@ var express = require('express')
 	, routes = require('./app/server/routes')
 	, lessMiddleware = require('less-middleware')
 	, http = require('http')
-	, path = require('path');
+	, path = require('path')
+    , dirPublic = path.join(__dirname, 'app/public');
 
 /** Application */
 var app = express();
-app.configure(function() {
-	app.set('port', process.env.PORT || 8888);
-	app.use(express.favicon());
-	app.set('views', __dirname + '/app/server/views');
-	app.set('view engine', 'jade');
-	app.locals.pretty = true;
-	app.use(express.cookieParser());
-	app.use(express.bodyParser());
-	app.use(express.methodOverride());
-	app.use(app.router);
-	app.use(express.static(path.join(__dirname, 'app/public')));
-	app.use(lessMiddleware({
+app.configure(function () {
+    app.set('port', process.env.PORT || 8888);
+    app.use(express.favicon());
+    app.set('views', __dirname + '/app/server/views');
+    app.set('view engine', 'jade');
+    app.locals.pretty = true;
+    app.use(express.cookieParser());
+    app.use(express.bodyParser());
+    app.use(express.methodOverride());
+    app.use(app.router);
+    app.use(express.static(dirPublic));
+    app.use(express.static(path.join(__dirname + '/app/server/data')));
+    app.use(lessMiddleware({
         src: path.join(__dirname, 'app/server/assets/less'),
-        dest: path.join(__dirname, 'app/public/stylesheets'),
+        dest: path.join(dirPublic, '/stylesheets'),
         prefix: '/stylesheets',
         compress: true,
         debug: true,
         force: true
-	}));
-	app.use(express.logger('dev'));
+    }));
+    app.use(express.logger('dev'));
 });
 
 /** Dev */
 app.configure('development', function() {
 	app.use(express.errorHandler());
 });
-
-
 
 /** Router */
 require('./app/server/router')(app);
