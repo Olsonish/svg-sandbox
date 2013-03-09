@@ -1,9 +1,9 @@
 d3.json('/data/data.json', function (data) {
 
-
-
-    // The SVG View
+    /** Define it */
     svg = d3.select('#sb-master');
+    
+    /** Make it */
     svg.append('svg')
         .selectAll('circle')
         .data(data)
@@ -13,7 +13,7 @@ d3.json('/data/data.json', function (data) {
         .attr('cy', function (d, i) { return (i * 25) + 25; })
         .attr('r', 9);
 
-
+    /** Then do stuff with it */
     svg.selectAll('circle')
         .on('mouseover', function () {
             d3.select(this).classed('active', true);
@@ -21,19 +21,4 @@ d3.json('/data/data.json', function (data) {
         .on('mouseout', function () {
             d3.select(this).classed('active', false);
         });
-
-
 });
-
-
-    //.on('mouseover', function (d) {
-    //    svg.append('text')
-    //    .attr('x', 0)
-    //    .attr('y', 0)
-    //    .text(data[0].count)
-    //    .attr('class', 'tip')
-    //    .style('font-size', '1.5em')
-    //})
-    //.on('mouseout', function (d) {
-    //    d3.selectAll('.tip').remove()
-    //});
