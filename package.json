@@ -1,14 +1,15 @@
 {
   "name": "svg-sandbox",
+  "subdomain": "olsonish.svg-sandbox"
   "version": "0.0.1",
   "description": "SVG Playground",
   "author": {
     "name": "Ivan Olson",
-    "email": "olsonish@gmail.com"  
+    "email": "olsonish@gmail.com"
   },
   "engines": {
     "node": "0.8.x",
-    "npm":  "1.1.x"
+    "npm": "1.1.x"
   },
   "private": true,
   "scripts": {

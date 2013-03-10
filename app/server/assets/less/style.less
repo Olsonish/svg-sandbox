@@ -1,6 +1,8 @@
 @import 'reset.less';
 @import 'grid.less';
 @import 'elements.less';
+//@import 'rickshaw.less';
+@import 'media-queries.less';
 
 @column-width: 60;
 @gutter-width: 20;
@@ -9,7 +11,6 @@
 @total-width: 100%;
 
 .ff-ubuntu() { font-family:'Ubuntu', sans-serif; }
-.ff-ubuntuMono() { font-family:'Ubuntu Mono', sans-serif; }
 .ff-ubuntuCondensed() { font-family:'Ubuntu Condensed', sans-serif; }
 
 body { background:rgb(20,20,20);color:rgb(242,242,242);.ff-ubuntu(); }
@@ -18,8 +19,33 @@ h1 { font-size:2em;line-height:2em; }
 
 #content { .column(12); }
 
-svg { .column(12);height:300px;background:rgba(255,255,255,.75);.rounded(3px); }
+svg { .column(12);background:rgba(255,255,255,.95);.rounded(5px); }
+
+text { .ff-ubuntuCondensed;font-weight:900; }
 
 circle { fill:rgba(255,255,255,.75);stroke:rgba(0,0,0,.75);cursor:pointer;
-    &.active { fill:rgba(0,0,255,.5);stroke:rgba(0,0,0,.25); }
+    &.active { fill:rgba(30,30,245,.75);stroke:rgba(0,0,0,.25); }
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+
 }

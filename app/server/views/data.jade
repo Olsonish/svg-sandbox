@@ -2,7 +2,11 @@ extends layouts/default
 
 block content
     h1 svg sandbox &rarr; sample data
-    a(href='/data/data.json') /data/data.json
+    ul
+        li
+            a(href='/data/data.json') /data/data.json
+        li
+            a(href='/data/data.tsv') /data/data.tsv
 
     div#sb-master.svg-b
 
