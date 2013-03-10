@@ -11,4 +11,4 @@ body{background:#141414;color:#f2f2f2;font-family:'Ubuntu',sans-serif;}
 h1{font-size:2em;line-height:2em;}
 #content{display:inline;float:left;width:97.91666666666666%;margin:0 1.0416666666666665%;}
 svg{display:inline;float:left;width:97.91666666666666%;margin:0 1.0416666666666665%;height:300px;background:rgba(255, 255, 255, 0.75);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
-circle{fill:rgba(255, 255, 255, 0.75);stroke:rgba(0, 0, 0, 0.75);}circle.active{fill:rgba(0, 0, 255, 0.5);stroke:rgba(0, 0, 0, 0.25);}
+circle{fill:rgba(255, 255, 255, 0.75);stroke:rgba(0, 0, 0, 0.75);cursor:pointer;}circle.active{fill:rgba(0, 0, 255, 0.5);stroke:rgba(0, 0, 0, 0.25);}
