@@ -18,6 +18,8 @@
 
 This is a personal project for purposes of learning things.
 
+* [jitsu-demo](http://olsonish.svg-sandbox.nodejitsu.com/) - Deployed on jitsu
+
 ***
 
 ####Use this to your own ends
