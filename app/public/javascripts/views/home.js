@@ -49,10 +49,27 @@ d3.json('/data/data.json', function (data) {
         .append('g')
             .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-    /** Make Line Graph */
 
+
+    /** Make Line Graph */
     d3.json('/data/date-close.json', function (err, data) {
-        d = data;
+
+        data = data.result;
+        
+        //data = data.result;
+
+        ///** Sort Data */
+        //function custom_sort(a, b) {
+        //    return new Date(a.date).getTime() - new Date(b.date).getTime();
+        //}
+        //data.sort(custom_sort);
+
+        ///** Data Keys */
+        //var id = 0;
+        //for (var i = 0; i < data.length; i++) { data[i].id = id++; }
+
+
+
 
         data.forEach(function (d) {
             d.date = parseDate(d.date);
@@ -62,13 +79,13 @@ d3.json('/data/data.json', function (data) {
         x.domain(d3.extent(data, function (d) { return d.date; }));
         y.domain(d3.extent(data, function (d) { return d.close; }));
 
+        console.log(d3.extent(data, function (d) { return d.date; }));
         console.log(d3.extent(data, function (d) { return d.close; }));
 
         svg.append('g')
             .attr('class', 'x axis')
             .attr('transform', 'translate(0,' + height + ')')
             .call(xAxis);
-
 
         svg.append('g')
             .attr('class', 'y axis')
@@ -81,9 +98,11 @@ d3.json('/data/data.json', function (data) {
             .text('price ($)');
 
         svg.append('path')
-            .datum(data)
+            .datum(data, function (d) { return d.id; })
             .attr('class', 'line')
             .attr('d', line);
+
+        
 
 
     });
