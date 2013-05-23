@@ -12,11 +12,11 @@
 * [Jade](http://jade-lang.com/) - Templating
 * [LESS](http://lesscss.org/) - CSS Preprocessor
 * [Semantic.gs](http://semantic.gs/) - CSS Grid
-* Going to attempt to use ember.js, d3.js, r2d3, vows, and typeScript
+* Along with some ember.js, d3.js, r2d3, vows, and typeScript
 
 ***
 
-This is a personal project for purposes of learning things.
+This is a personal project for purposes of learning new things.
 
 * [jitsu-demo](http://olsonish.svg-sandbox.nodejitsu.com/) - Deployed on jitsu
 
@@ -39,6 +39,3 @@ npm install nodemon -g
 npm install
 nodemon app
 ```
-If you happen to be using Visual Studio 2012 I recommend investigating the following:
-* https://bitbucket.org/kurouninn/node.js-visualstudio-intellisense
-* http://stackoverflow.com/questions/11488208/intellisense-doesnt-work-for-js-in-vs2012
