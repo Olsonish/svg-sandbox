@@ -12,7 +12,6 @@
 * [Jade](http://jade-lang.com/) - Templating
 * [LESS](http://lesscss.org/) - CSS Preprocessor
 * [Semantic.gs](http://semantic.gs/) - CSS Grid
-* Along with some ember.js, d3.js, r2d3, vows, and typeScript
 
 ***
 
