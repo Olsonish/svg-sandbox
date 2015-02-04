@@ -19,7 +19,6 @@
 
 This assumes you already have node installed.
 ```
-git clone git://github.com/Olsonish/svg-sandbox.git svg-sandbox
 cd svg-sandbox
 npm install
 node app.js
