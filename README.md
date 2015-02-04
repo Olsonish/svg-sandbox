@@ -24,11 +24,3 @@ cd svg-sandbox
 npm install
 node app.js
 ```
-I recommend nodemon (https://github.com/remy/nodemon)
-```
-git clone git://github.com/Olsonish/svg-sandbox.git svg-sandbox
-cd svg-sandbox
-npm install nodemon -g
-npm install
-nodemon app
-```
